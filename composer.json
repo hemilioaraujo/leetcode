@@ -15,5 +15,19 @@
       "name": "Hemilio Melo",
       "email": "hemilioaraujo@gmail.com"
     }
-  ]
+  ],
+  "scripts": {
+    "phpunit": [
+      "php vendor/bin/phpunit"
+    ],
+    "testColor": [
+      "@phpunit --color"
+    ],
+    "testWarning": [
+      "@testColor --display-warnings"
+    ],
+    "test": [
+      "@testWarning ./tests"
+    ]
+  }
 }
